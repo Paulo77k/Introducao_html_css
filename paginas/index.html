@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="../arquivos/style.css">
 <style>
 
 </style>
@@ -11,18 +11,20 @@
     <title>Introduçao ao html</title>
     <meta name="äuthor" content="Paulo">
     <meta name="description" content="Site com o proposito de explicar o HTML como ao todo">
-    <link rel="shortcut icon" href="./OIP.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="../arquivos/OIP.webp" type="image/x-icon">
+
+    <link rel="stylesheet" href="../estilizacoes/style.css">
 </head>
 
 <body>
     <h1 style="">tela principal sobre a Alexa</h1>
     <header id="cabecalho">
-        <img id="Logo" src="OIP.webp" alt="">
+        <img id="Logo" src="../arquivos/OIP.webp" alt="">
         <a href="https://youtu.be/dxwgT0Q0424?si=giW5hWM-7C1LwRMD">Sobre a foto</a>
         <nav>
             <a href="https://youtu.be/dxwgT0Q0424?si=giW5hWM-7C1LwRMD">Sobre a foto</a>
             <a href="index.html">inicial</a>
-            <a href="TESTE.pdf" download>Saiba mais</a>
+            <a href="../arquivos/TESTE.pdf" download>Saiba mais</a>
 
 
         </nav>
@@ -32,27 +34,44 @@
     <main>
 
         <section>
+
+
             <h2>Modelos Alexa</h2>
-            <div>
-                <img src="OIP.webp" alt="Modelos Alexa">
-                <h3>Echo Pop</h3>
-                <span>340,00</span>
+            <div id="container-flex-produtos">
+                <article class="card-produto">
+                    <img src="../arquivos/OIP.webp" alt="Modelos Alexa">
+                    <h3>Echo Dot</h3>
+                    <span>340,00</span>
+                </article>
+
+                <article class="card-produto">
+                    <img src="../arquivos/OIP.webp" alt="Modelos Alexa">
+                    <h3>Echo Dot</h3>
+                    <span>340,00</span>
+                </article>
+
+                <article class="card-produto">
+                    <img src="../arquivos/OIP.webp" alt="Modelos Alexa">
+                    <h3>Echo Dot</h3>
+                    <span>340,00</span>
+                </article>
+
             </div>
-            <section>
 
 
-            </section>
+
+        </section>
+
+        <section id="container-flex-suporte-cliente">
             <h2>Suporte ao cliente</h2>
             <form>
                 <label for="campo-nomecompleto">Nome Completo:</label>
-                <input type="text" placeholder="digite seu Nome completo" id="campo-nomecompleto">
+                <input class="inputss" type="text" placeholder="digite seu Nome completo">
 
-                <br />
+                
 
                 <label for="">Upload</label>
-                <input type="file" name="" id="">
-
-                <br />
+                <input class="inputss"id="inputss" type="file" name="" id="">
 
                 <label for="">Estado</label>
                 <select name="" id="">
@@ -66,26 +85,26 @@
                     <option value="SC">SC</option>
                 </select>
 
-                <br />
+                
 
                 <label for="campo-email">E-mail:</label>
-                <input type="email" name="" id="campo-email">
-                <input type="checkbox" name="" id="">
+                <input class="inputss" type="email" name="">
+                <input class="inputss"type="checkbox" name="" id="">
                 <label for="">Li e concordo com os termos</label>
-                <br />
+               
                 <label for="">Sexo:</label>
 
                 <label for="">Feminino</label>
-                <input type="radio" name="opcao-genero" id="" value="Feminino">
+                <input class="inputss"type="radio" name="opcao-genero" id="" value="Feminino">
                 <label for="">Masculino</label>
-                <input type="radio" name="opcao-genero" id="" value="Masculino">
-                <br />
+                <input class="inputss"type="radio" name="opcao-genero" id="" value="Masculino">
+              
                 <label for="">Descriçao:</label>
                 <textarea name="" id="" required></textarea>
 
-                <br />
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
+                
+                <button class="buttons" type="submit">Enviar</button>
+                <button class="buttons" type="reset">Limpar</button>
 
 
 
@@ -98,6 +117,7 @@
         </section>
 
     </main>
+
     <aside>
 
         <nav>
